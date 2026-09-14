@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Muhammad Rizwan — DevOps consultant building collaborative, carbon-conscious platforms." />
+  <meta name="description" content="Muhammad Rizwan — DevOps consultant specializing in AWS, GCP, Terraform, and Kubernetes." />
   <title>Muhammad Rizwan · DevOps Consultant</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,22 +16,20 @@
   <header class="site-header">
     <a class="logo" href="#top" aria-label="Muhammad Rizwan home">MR</a>
     <nav class="nav" aria-label="Primary">
-      <a href="#practice">Practice</a>
-      <a href="#lab">Green Lab</a>
-      <a href="#work">Work</a>
-      <a href="#collaborate">Collaborate</a>
+      <a href="#services">Services</a>
+      <a href="#stack">Stack</a>
+      <a href="#lab">Architecture Lab</a>
+      <a href="#engagements">Engagements</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <button type="button" class="theme-eco" id="ecoToggle" aria-pressed="true" title="Eco rendering mode">
-      <span class="theme-eco__dot" aria-hidden="true"></span>
-      <span class="theme-eco__label">Eco mode</span>
-    </button>
+    <a class="header-cta" href="mailto:rizwanmuhammad4444@gmail.com">Email</a>
   </header>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="brand">
       <div class="hero__media" aria-hidden="true">
         <img
-          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2400&q=80"
+          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2400&q=80"
           alt=""
           width="2400"
           height="1600"
@@ -41,170 +39,197 @@
       </div>
       <div class="hero__content">
         <p class="brand" id="brand">Muhammad Rizwan</p>
-        <h1 class="hero__headline">Platforms that scale with people — and the planet.</h1>
+        <h1 class="hero__headline">DevOps consultant for AWS, GCP, Terraform &amp; Kubernetes.</h1>
         <p class="hero__lede">
-          DevOps consulting for teams who want collaborative delivery, lean cloud spend, and infrastructure that stays green under load.
+          I design production platforms: multi-cloud IaC, EKS/GKE operations, GitOps delivery,
+          and CI/CD that engineering teams can own.
         </p>
         <div class="hero__actions">
-          <a class="btn btn--solid" href="#collaborate">Start a collaboration</a>
-          <a class="btn btn--ghost" href="#lab">Open the Green Lab</a>
+          <a class="btn btn--solid" href="#contact">Discuss an engagement</a>
+          <a class="btn btn--ghost" href="#stack">View core stack</a>
         </div>
       </div>
     </section>
 
-    <section class="practice" id="practice" aria-labelledby="practice-title">
-      <div class="practice__intro">
-        <p class="eyebrow">Practice</p>
-        <h2 id="practice-title">Advanced DevOps, designed as a shared craft.</h2>
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="services__intro">
+        <p class="eyebrow">Services</p>
+        <h2 id="services-title">Platform work that ships to production.</h2>
         <p>
-          I embed with product and platform teams to co-own pipelines, observability, and reliability —
-          so delivery feels like partnership, not a ticket queue.
+          Fractional or project-based consulting aligned to what hiring teams and Reddit/LinkedIn
+          demand most: Terraform, Kubernetes, AWS/GCP, and reliable delivery automation.
         </p>
       </div>
-      <ul class="practice__list">
+      <ul class="services__list">
         <li>
-          <h3>Collaborative platforms</h3>
-          <p>Pair on GitOps, paved roads, and self-service environments your engineers actually want to use.</p>
+          <h3>Multi-cloud architecture</h3>
+          <p>AWS and GCP landing zones, networking, IAM, and workload placement across EKS, GKE, ECS, and Cloud Run.</p>
         </li>
         <li>
-          <h3>Carbon-aware delivery</h3>
-          <p>Right-size clusters, schedule batch work for cleaner grids, and measure the footprint of every release train.</p>
+          <h3>Infrastructure as Code</h3>
+          <p>Reusable Terraform modules, remote state, policy gates, and drift-resistant provisioning for every environment.</p>
         </li>
         <li>
-          <h3>Resilient automation</h3>
-          <p>CI/CD, IaC, and progressive delivery with guardrails — sophisticated without being fragile.</p>
+          <h3>Kubernetes platforms</h3>
+          <p>Cluster lifecycle, Helm/Kustomize packaging, HPA + node autoscaling, IRSA/Workload Identity, and GitOps with Argo CD.</p>
+        </li>
+        <li>
+          <h3>CI/CD &amp; DevSecOps</h3>
+          <p>GitHub Actions / GitLab CI with OIDC (no static keys), image scanning, progressive delivery, and signed supply-chain controls.</p>
         </li>
       </ul>
     </section>
 
+    <section class="stack" id="stack" aria-labelledby="stack-title">
+      <div class="stack__intro">
+        <p class="eyebrow">Core stack</p>
+        <h2 id="stack-title">Skills mirrored to the 2025–26 market.</h2>
+        <p>
+          Prioritized from DevOps job analyses (Terraform &amp; Kubernetes lead), LinkedIn tooling demand
+          (GitHub Actions, Argo CD, Docker, Prometheus), and multi-cloud consultant profiles.
+        </p>
+      </div>
+      <div class="stack__grid">
+        <div>
+          <h3>Cloud</h3>
+          <ul>
+            <li>AWS — EKS, ECS, EC2, VPC, IAM, RDS, S3, Lambda, Route&nbsp;53, CloudWatch</li>
+            <li>GCP — GKE, Cloud Run, Cloud SQL, IAM, VPC, Cloud Build, Monitoring</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Platform</h3>
+          <ul>
+            <li>Kubernetes · Docker · Helm · Kustomize</li>
+            <li>Argo CD / GitOps · Karpenter · HPA</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Automation</h3>
+          <ul>
+            <li>Terraform · Terragrunt · Ansible</li>
+            <li>GitHub Actions · GitLab CI · Jenkins</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Reliability &amp; security</h3>
+          <ul>
+            <li>Prometheus · Grafana · OpenTelemetry · ELK</li>
+            <li>Vault · OIDC · OPA/Kyverno · Trivy</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Fundamentals</h3>
+          <ul>
+            <li>Linux · Networking · Git</li>
+            <li>Python · Bash · FinOps / cost control</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="lab" id="lab" aria-labelledby="lab-title">
       <div class="lab__head">
-        <p class="eyebrow">Interactive Green Lab</p>
-        <h2 id="lab-title">Tune a stack. Watch the planet respond.</h2>
-        <p>Adjust how you ship. The live panel estimates relative energy load and collaboration readiness.</p>
+        <p class="eyebrow">Architecture Lab</p>
+        <h2 id="lab-title">Compose a reference delivery path.</h2>
+        <p>Pick cloud, orchestration, and delivery style. The panel maps a production-credible stack.</p>
       </div>
 
-      <div class="lab__stage" data-lab>
+      <div class="lab__stage">
         <div class="lab__controls">
-          <label class="control">
-            <span>Release cadence</span>
-            <input type="range" id="cadence" min="1" max="5" value="3" />
-            <span class="control__value" data-for="cadence">Balanced</span>
-          </label>
-          <label class="control">
-            <span>Cluster headroom</span>
-            <input type="range" id="headroom" min="1" max="5" value="2" />
-            <span class="control__value" data-for="headroom">Lean</span>
-          </label>
-          <label class="control">
-            <span>Team pairing depth</span>
-            <input type="range" id="pairing" min="1" max="5" value="4" />
-            <span class="control__value" data-for="pairing">Deep</span>
-          </label>
-          <fieldset class="control control--choice">
-            <legend>Workload window</legend>
-            <label><input type="radio" name="window" value="peak" /> Peak grid</label>
-            <label><input type="radio" name="window" value="shoulder" checked /> Shoulder</label>
-            <label><input type="radio" name="window" value="green" /> Greenest hours</label>
+          <fieldset class="choice">
+            <legend>Primary cloud</legend>
+            <label><input type="radio" name="cloud" value="aws" checked /> AWS</label>
+            <label><input type="radio" name="cloud" value="gcp" /> GCP</label>
+            <label><input type="radio" name="cloud" value="multi" /> Multi-cloud</label>
+          </fieldset>
+          <fieldset class="choice">
+            <legend>Workloads</legend>
+            <label><input type="radio" name="runtime" value="eks" checked /> EKS / GKE</label>
+            <label><input type="radio" name="runtime" value="serverless" /> Containers + serverless</label>
+            <label><input type="radio" name="runtime" value="mixed" /> Mixed estate</label>
+          </fieldset>
+          <fieldset class="choice">
+            <legend>Delivery model</legend>
+            <label><input type="radio" name="delivery" value="gitops" checked /> GitOps (Argo CD)</label>
+            <label><input type="radio" name="delivery" value="cicd" /> CI-driven deploy</label>
+            <label><input type="radio" name="delivery" value="progressive" /> Progressive / canary</label>
           </fieldset>
         </div>
 
-        <div class="lab__readout" aria-live="polite">
-          <div class="meter" role="img" aria-label="Sustainability index">
-            <svg viewBox="0 0 120 120" class="meter__ring">
-              <circle cx="60" cy="60" r="52" class="meter__track" />
-              <circle cx="60" cy="60" r="52" class="meter__progress" id="meterProgress" />
-            </svg>
-            <div class="meter__core">
-              <span class="meter__score" id="ecoScore">78</span>
-              <span class="meter__unit">GreenOps index</span>
-            </div>
-          </div>
-          <dl class="stats">
-            <div>
-              <dt>Relative energy</dt>
-              <dd id="energyStat">0.62× baseline</dd>
-            </div>
-            <div>
-              <dt>Collab signal</dt>
-              <dd id="collabStat">Strong pairing</dd>
-            </div>
-            <div>
-              <dt>Delivery posture</dt>
-              <dd id="deliveryStat">Progressive, reviewed</dd>
-            </div>
-          </dl>
-          <p class="lab__insight" id="labInsight">
-            Lean headroom plus shoulder-hour deploys keeps waste low while pairing keeps change safe.
-          </p>
-        </div>
+        <aside class="lab__readout" aria-live="polite">
+          <p class="lab__kicker">Recommended path</p>
+          <h3 id="pathTitle">AWS · EKS · GitOps</h3>
+          <ul class="path-list" id="pathList"></ul>
+          <p class="lab__note" id="pathNote"></p>
+        </aside>
       </div>
     </section>
 
     <section class="pipeline" aria-labelledby="pipeline-title">
       <div class="pipeline__intro">
-        <p class="eyebrow">Delivery map</p>
-        <h2 id="pipeline-title">Trace a collaborative release path.</h2>
-        <p>Select a stage to see how humans and automation share ownership.</p>
+        <p class="eyebrow">Engagement flow</p>
+        <h2 id="pipeline-title">How an engagement usually runs.</h2>
+        <p>Select a phase to see typical deliverables.</p>
       </div>
-      <div class="pipeline__track" role="tablist" aria-label="Release stages">
-        <button type="button" class="stage is-active" role="tab" aria-selected="true" data-stage="intent">Intent</button>
+      <div class="pipeline__track" role="tablist" aria-label="Engagement phases">
+        <button type="button" class="stage is-active" role="tab" aria-selected="true" data-stage="assess">Assess</button>
+        <button type="button" class="stage" role="tab" aria-selected="false" data-stage="design">Design</button>
         <button type="button" class="stage" role="tab" aria-selected="false" data-stage="build">Build</button>
-        <button type="button" class="stage" role="tab" aria-selected="false" data-stage="verify">Verify</button>
-        <button type="button" class="stage" role="tab" aria-selected="false" data-stage="ship">Ship</button>
-        <button type="button" class="stage" role="tab" aria-selected="false" data-stage="learn">Learn</button>
+        <button type="button" class="stage" role="tab" aria-selected="false" data-stage="harden">Harden</button>
+        <button type="button" class="stage" role="tab" aria-selected="false" data-stage="handoff">Handoff</button>
       </div>
       <article class="pipeline__panel" id="stagePanel" role="tabpanel">
-        <h3 id="stageHeading">Intent</h3>
+        <h3 id="stageHeading">Assess</h3>
         <p id="stageBody">
-          Product, SRE, and platform align on outcomes and carbon budgets before a single pipeline runs.
-          Shared ADRs keep decisions visible across timezones.
+          Review current AWS/GCP estate, Terraform posture, cluster ops, and CI/CD bottlenecks.
+          Produce a prioritized roadmap with risk, cost, and delivery impact.
         </p>
       </article>
     </section>
 
-    <section class="work" id="work" aria-labelledby="work-title">
+    <section class="work" id="engagements" aria-labelledby="work-title">
       <div class="work__intro">
-        <p class="eyebrow">Selected work</p>
-        <h2 id="work-title">Outcomes over orchestration theater.</h2>
+        <p class="eyebrow">Engagement patterns</p>
+        <h2 id="work-title">Outcomes clients hire for.</h2>
       </div>
       <div class="work__flow">
         <article class="case">
-          <span class="case__tag">Platform</span>
-          <h3>Self-serve Kubernetes for 40+ squads</h3>
+          <span class="case__tag">Terraform · AWS</span>
+          <h3>Reusable IaC for multi-account AWS</h3>
           <p>
-            Co-designed a GitOps paved road that cut environment lead time from days to minutes,
-            with policy-as-code and shared runbooks instead of a central bottleneck.
+            Module libraries for VPC, EKS, IAM, and data tiers with remote state and PR plan reviews —
+            cutting manual provisioning and environment drift.
           </p>
         </article>
         <article class="case">
-          <span class="case__tag">GreenOps</span>
-          <h3>Carbon-aware batch &amp; right-sizing</h3>
+          <span class="case__tag">Kubernetes · GitOps</span>
+          <h3>EKS / GKE platforms with Argo CD</h3>
           <p>
-            Shifted non-urgent workloads to cleaner grid windows and reclaimed idle capacity —
-            measurable cloud cost drop with no reliability regression.
+            Helm-standardized services, Git as source of truth, IRSA/Workload Identity, HPA + Karpenter-style
+            capacity, and observability with Prometheus/Grafana.
           </p>
         </article>
         <article class="case">
-          <span class="case__tag">Reliability</span>
-          <h3>Progressive delivery at scale</h3>
+          <span class="case__tag">CI/CD · DevSecOps</span>
+          <h3>OIDC pipelines without static cloud keys</h3>
           <p>
-            Built canary + automated rollback paths with observability that product engineers
-            could read in the same war-room as ops.
+            GitHub Actions / GitLab CI deploying via federation, with Trivy/Sonar-style gates,
+            progressive rollouts, and faster, safer release trains.
           </p>
         </article>
       </div>
     </section>
 
-    <section class="collaborate" id="collaborate" aria-labelledby="collab-title">
-      <div class="collaborate__inner">
-        <p class="eyebrow">Collaborate</p>
-        <h2 id="collab-title">Let’s design the next platform together.</h2>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__inner">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Ready to harden your cloud platform?</h2>
         <p>
-          Retainer or focused engagement — pairing on architecture, pipelines, and the operating model
-          that keeps your footprint honest.
+          Architecture reviews, Terraform/Kubernetes builds, or ongoing platform consulting —
+          remote-friendly engagements.
         </p>
-        <form class="collab-form" id="collabForm">
+        <form class="contact-form" id="contactForm">
           <label>
             <span>Name</span>
             <input type="text" name="name" required autocomplete="name" placeholder="Your name" />
@@ -213,16 +238,16 @@
             <span>Work email</span>
             <input type="email" name="email" required autocomplete="email" placeholder="you@company.com" />
           </label>
-          <label class="collab-form__wide">
-            <span>What should we co-build?</span>
-            <textarea name="message" rows="4" required placeholder="Platform goals, constraints, sustainability targets…"></textarea>
+          <label class="contact-form__wide">
+            <span>Project brief</span>
+            <textarea name="message" rows="4" required placeholder="AWS/GCP scope, Terraform/K8s needs, timeline…"></textarea>
           </label>
-          <button type="submit" class="btn btn--solid">Send collaboration brief</button>
-          <p class="form-note" id="formNote" hidden>Thanks — open your mail client to finish sending, or write directly.</p>
+          <button type="submit" class="btn btn--solid">Send brief</button>
+          <p class="form-note" id="formNote" hidden>Opening your mail client…</p>
         </form>
         <p class="direct-mail">
-          Prefer inbox?
-          <a href="mailto:rizwanmuhammad4444@gmail.com?subject=DevOps%20collaboration">rizwanmuhammad4444@gmail.com</a>
+          Or write directly:
+          <a href="mailto:rizwanmuhammad4444@gmail.com?subject=DevOps%20consulting">rizwanmuhammad4444@gmail.com</a>
         </p>
       </div>
     </section>
@@ -230,7 +255,7 @@
 
   <footer class="site-footer">
     <p>© <span id="year"></span> Muhammad Rizwan · DevOps Consultant</p>
-    <p class="site-footer__eco">Built lean for the web — eco mode prefers reduced motion and lighter paint.</p>
+    <p>AWS · GCP · Terraform · Kubernetes</p>
   </footer>
 
   <script src="app.js" defer></script>
