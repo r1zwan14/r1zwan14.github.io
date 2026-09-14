@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Muhammad Rizwan — AI-augmented DevOps consultant for AWS, GCP, Terraform, and Kubernetes." />
+  <title>Muhammad Rizwan · AI DevOps Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Syne:wght@500;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+  <canvas id="neuralField" class="neural-field" aria-hidden="true"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="progress-rail" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <header class="site-header">
+    <a class="logo magnetic" href="#top" data-magnet>MR<span class="logo__pulse"></span></a>
+    <nav class="nav" aria-label="Primary">
+      <a class="magnetic" href="/">Playground</a>
+      <a class="magnetic" href="#services" data-magnet>Services</a>
+      <a class="magnetic" href="#orbit" data-magnet>Skill Orbit</a>
+      <a class="magnetic" href="#ai" data-magnet>AI Console</a>
+      <a class="magnetic" href="#engagements" data-magnet>Work</a>
+      <a class="magnetic" href="#contact" data-magnet>Contact</a>
+    </nav>
+    <a class="sys-btn magnetic" href="/" data-magnet>Playground</a>
+    <button type="button" class="sys-btn magnetic" id="warpToggle" data-magnet aria-pressed="true">
+      <span class="sys-btn__dot"></span> Warp FX
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__content">
+        <p class="hero__boot mono" id="bootLine">booting neural control plane…</p>
+        <p class="brand" id="brand" data-scramble="Muhammad Rizwan">Muhammad Rizwan</p>
+        <h1 class="hero__headline">
+          <span class="line" data-scramble="AI-native DevOps for">AI-native DevOps for</span>
+          <span class="line accent-text" data-scramble="AWS · GCP · Terraform · K8s">AWS · GCP · Terraform · K8s</span>
+        </h1>
+        <p class="hero__lede">
+          Futurist platform consulting — infrastructure that thinks in pipelines,
+          self-heals under load, and ships with AI-assisted guardrails.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--solid magnetic" href="#ai" data-magnet>Open AI Architect</a>
+          <a class="btn btn--ghost magnetic" href="#orbit" data-magnet>Spin the stack</a>
+        </div>
+        <div class="hero__hud mono" aria-hidden="true">
+          <span id="hudCoords">x:000 y:000</span>
+          <span id="hudNodes">nodes:48</span>
+          <span id="hudLatency">latency:12ms</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services__intro reveal">
+        <p class="eyebrow">Signal / Services</p>
+        <h2>Platforms engineered like intelligent systems.</h2>
+        <p>Interactive delivery for teams who want cloud automation with an AI edge — not slideware.</p>
+      </div>
+      <ul class="services__list">
+        <li class="tilt-card reveal" data-tilt>
+          <span class="svc-index mono">01</span>
+          <h3>Multi-cloud control planes</h3>
+          <p>AWS + GCP landing zones, EKS/GKE, identity federation, and traffic that fails closed.</p>
+        </li>
+        <li class="tilt-card reveal" data-tilt>
+          <span class="svc-index mono">02</span>
+          <h3>Terraform as product</h3>
+          <p>Module registries, plan-on-PR, policy gates — infrastructure that reviews itself.</p>
+        </li>
+        <li class="tilt-card reveal" data-tilt>
+          <span class="svc-index mono">03</span>
+          <h3>Kubernetes that scales itself</h3>
+          <p>GitOps, Helm, HPA + node autoscaling, progressive delivery with automated abort.</p>
+        </li>
+        <li class="tilt-card reveal" data-tilt>
+          <span class="svc-index mono">04</span>
+          <h3>AI-augmented DevOps</h3>
+          <p>Copilot-ready pipelines, anomaly-aware observability hooks, and runbook automation.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="orbit-section" id="orbit">
+      <div class="orbit-section__intro reveal">
+        <p class="eyebrow">Skill Orbit</p>
+        <h2>Drag the constellation. Click a node.</h2>
+        <p>A living map of the stack — pull nodes apart, watch the mesh rewire.</p>
+      </div>
+      <div class="orbit-stage">
+        <canvas id="orbitCanvas" width="900" height="520" aria-label="Interactive skill constellation"></canvas>
+        <aside class="orbit-detail" id="orbitDetail">
+          <p class="mono orbit-detail__tag">SELECT A NODE</p>
+          <h3 id="orbitTitle">Terraform</h3>
+          <p id="orbitBody">Reusable modules, remote state, and drift-resistant multi-account provisioning across AWS and GCP.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="ai-section" id="ai">
+      <div class="ai-section__intro reveal">
+        <p class="eyebrow">AI Architect Console</p>
+        <h2>Talk to the control plane.</h2>
+        <p>Type a goal or tap a prompt. Watch the architect think, then emit a stack blueprint.</p>
+      </div>
+      <div class="console tilt-card" data-tilt>
+        <div class="console__bar">
+          <span class="console__dots" aria-hidden="true"></span>
+          <span class="mono">rizwan@neural-ops — zsh</span>
+        </div>
+        <div class="console__log mono" id="consoleLog" role="log" aria-live="polite"></div>
+        <div class="console__prompts">
+          <button type="button" class="chip magnetic" data-prompt="Design an EKS GitOps platform with Terraform and Argo CD" data-magnet>EKS + GitOps</button>
+          <button type="button" class="chip magnetic" data-prompt="Multi-cloud AWS and GCP with OIDC and no static keys" data-magnet>Multi-cloud OIDC</button>
+          <button type="button" class="chip magnetic" data-prompt="AI-assisted CI/CD with canaries and automated rollback" data-magnet>AI canary CI/CD</button>
+          <button type="button" class="chip magnetic" data-prompt="GKE Autopilot platform with Helm and Workload Identity" data-magnet>GKE Autopilot</button>
+        </div>
+        <form class="console__form" id="consoleForm">
+          <label class="sr-only" for="consoleInput">Ask the AI architect</label>
+          <input class="mono" id="consoleInput" type="text" autocomplete="off" placeholder="describe the platform you need…" />
+          <button class="btn btn--solid magnetic" type="submit" data-magnet>Transmit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="work" id="engagements">
+      <div class="work__intro reveal">
+        <p class="eyebrow">Signal traces</p>
+        <h2>Engagement patterns that feel like the future.</h2>
+      </div>
+      <div class="work__flow">
+        <article class="case reveal" data-tilt>
+          <span class="case__tag mono">TF · AWS · EKS</span>
+          <h3>Self-wiring Terraform → EKS GitOps</h3>
+          <p>Module factories, OIDC pipelines, Argo CD sync — environments that bootstrap from a single apply.</p>
+        </article>
+        <article class="case reveal" data-tilt>
+          <span class="case__tag mono">GCP · GKE · AI OPS</span>
+          <h3>GKE with AI-assisted incident loops</h3>
+          <p>Workload Identity, Helm parity, and observability wired for anomaly hints before pages fire.</p>
+        </article>
+        <article class="case reveal" data-tilt>
+          <span class="case__tag mono">CI · DEVSECOPS</span>
+          <h3>Progressive delivery without the drama</h3>
+          <p>Canaries, policy-as-code, Trivy gates — humans set risk appetite, machines enforce it.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__inner reveal">
+        <p class="eyebrow">Uplink</p>
+        <h2 data-scramble="Initiate collaboration.">Initiate collaboration.</h2>
+        <p>Bring the problem space. I’ll bring the control plane.</p>
+        <form class="contact-form" id="contactForm">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required autocomplete="name" placeholder="Your name" />
+          </label>
+          <label>
+            <span>Work email</span>
+            <input type="email" name="email" required autocomplete="email" placeholder="you@company.com" />
+          </label>
+          <label class="contact-form__wide">
+            <span>Mission brief</span>
+            <textarea name="message" rows="4" required placeholder="AWS/GCP goals, AI/automation ambitions, timeline…"></textarea>
+          </label>
+          <button type="submit" class="btn btn--solid magnetic" data-magnet>Send uplink</button>
+          <p class="form-note" id="formNote" hidden>Opening secure mail channel…</p>
+        </form>
+        <p class="direct-mail mono">
+          <a href="mailto:rizwanmuhammad4444@gmail.com">rizwanmuhammad4444@gmail.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Muhammad Rizwan</p>
+    <p class="mono">neural-ops · aws · gcp · tf · k8s · ai</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
